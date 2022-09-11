@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Tab icon and title -->
+	<title>EE267: Virtual Reality</title>
+	<link rel="shortcut icon" href="https://explorecourses.stanford.edu/favicon.ico">
+
+	<!-- bootstrap template -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+	<!-- Google fonts -->
+	<link href="./font/font.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<a href="http://www.computationalimaging.org/" target="_blank">
+		<img src="./imgs/sci_logo.jpg" style="height:50px; float: left; margin-left: 20px;">
+	</a>
+		<a href="http://stanford.edu/" target="_blank">
+		<img src="./imgs/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+	</a>
+		<h1>EE267: Virtual Reality</h1>
+		<div class="text-center">
+			<h4>Spring 2022</h4>
+		</div>
+		<div class="text-center">
+		<h2 style="color:red"><strong>This course will not be offered in the 2022/2023 academic year.<br>
+	 We plan on offering it again starting in the spring of 2024.</strong></h2>
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+
+	<div>
+		<img style="width:100%; height:auto" src="./imgs/vrlogo.jpg">
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<h2>Course Description</h2>
+			<div id="coursedesc">
+				<p>
+					OpenGL and WebGL, real-time rendering, 3D display systems, display optics & electronics, IMUs and sensors, tracking, haptics, rendering pipeline, multimodal human perception and depth perception, stereo rendering, presence. Emphasis on VR technology.
+					Hands-on programming assignments. The 3-unit version requires a final course project with a 1-2 page report. The 4-unit version requires a final course project with a 6-8 page conference paper style report.
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=EE+267&collapse=" target=_blank>(Course Catalog Entry)</a>
+					<!-- The course will be offered through Zoom as per Stanford policy, and the related hardware for homework would be distributed by mail (TBD). -->
+				</p>
+
+				<p>
+					<bold>EE267W</bold> Writing in the Major (WIM) version of EE267. This 5-unit WIM version of EE267 is the same as the 4-unit version of EE267 but additionally requires participation in 2 writing in the major workshops, and weekly writing
+					assignments. EE267W is only available for undergraduate students who are enrolled in the 4-unit version of EE267. Please enroll in EE267 and then contact the course staff during the first week of the quarter to enroll.
+				</p>
+
+				<p>
+					Topics include:
+					<ul>
+						<li>Introduction to computer graphics</li>
+						<li>The graphics pipeline</li>
+						<li>OpenGL, WebGL, and GLSL shader programming</li>
+						<li>JavaScript with Three.js</li>
+						<li>Stereoscopic perception and rendering</li>
+						<li>Head mounted display optics and electronics</li>
+						<li>Inertial measurement units: gyros, accelerators, magnetometers</li>
+						<li>Sensor fusion: complementary filter, Kalman filter</li>
+						<li>Human perception: visual, audio, vestibular, tactile, ...</li>
+						<li>Guest lectures from VR experts (e.g. Oculus Research)</li>
+						<li> ... more interesting topics.</li>
+					</ul>
+				</p>
+			</div>
+
+<br>
+
+			<h2>Course Goals</h2> This is a technical class. Students will learn about all hardware (optics, electronics, display, microcontroller, ...) and software (JavaScript, WebGL, GLSL) aspects of Virtual Reality (VR). The goal for this class is to learn all of these
+			aspects in a hands-on manner. Each assignment is a small piece of a bigger project. The goal for each student or small team of students is to build a fully functional head mounted display, including optics, display, IMU, rendering, lens distortion
+			shader, model loader etc., from off-the-shelf parts. The HMD we will build is inspired by the Oculus DK1. We will NOT learn game development, but study the fundamental building blocks of VR systems and implement all of them.
+
+<br><br>
+
+
+			<!--
+			<font color="red">
+			<h2>COVID-19 Update</h2> EE267 and EE267W will be taught virtually in the Spring quarter of 2021.
+			You will the zoom links as well as recorded lectures on <a href="https://canvas.stanford.edu/" target="_blank">canvas</a>. We will hold regular office hours with the instructor and TAs via zoom (see zoom links on <a href="https://canvas.stanford.edu/" target="_blank">canvas</a>). Please keep track of the <a href="http://stanford.edu/class/ee267/syllabus.html" target="_blank">syllabus</a> where we will post lecture slides, labs and homeworks and <a href="https://canvas.stanford.edu/" target="_blank">canvas</a>.
+			We will ship all required hardware to students and will post info on that later. As the number of available hardware kits is limited, we had to cap the enrollment of this class at a lower rate than usual, so make sure that you are enrolled.
+			</font>
+			-->
+		</div>
+	</div>
+
+	<div class="container sec">
+		<div class="row">
+			<div class="col-md-2">
+				<h2>Instructor</h2>
+				<div class="instructor">
+					<a href="http://web.stanford.edu/~gordonwz/" target="_blank">
+						<div class="instructorphoto"><img src="./imgs/gordon.jpg"></div>
+						<div>Gordon Wetzstein</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-8" style="border-left: solid #eeeeee;">
+				<h2>Teaching Assistants</h2>
+<!--
+				<div class="instructor">
+					<a href="http://stanford.edu/~brookek/" target="_blank">
+						<div class="instructorphoto"><img src="./imgs/brooke.jpg"></div>
+						<div>Brooke Krajancich</div>
+					</a>
+				</div>
+-->
+				<div class="instructor">
+					<a href="https://choisuyeon.github.io/" target="_blank">
+						<div class="instructorphoto"><img src="./imgs/suyeon.jpg"></div>
+						<div>Suyeon Choi</div>
+					</a>
+				</div>
+
+				<div class="instructor">
+					<a href="https://www.linkedin.com/in/manu-gopakumar-25032412b/" target="_blank">
+						<div class="instructorphoto"><img src="./imgs/manu.jpeg"></div>
+						<div>Manu Gopakumar</div>
+					</a>
+				</div>
+<!--
+				<div class="instructor">
+					<a href="https://nitish.me/" target="_blank">
+						<div class="instructorphoto"><img src="./imgs/nitish.jpg"></div>
+						<div>Nitish Padmanaban</div>
+					</a>
+				</div>
+-->
+			</div>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div style="text-align:center; padding:40px 0px 40px 0px;">
+			<a href="./syllabus.html" style="margin-right:50px">
+				<button type="button" class="btn btn-success btn-lg">Detailed Syllabus</button>
+			</a>
+			<a href="./syllabus_wim.html" style="margin-right:50px">
+				<button type="button" class="btn btn-success btn-lg">Syllabus for EE267W</button>
+			</a>
+			<a href="https://github.com/computational-imaging/EE267-Spring2022" target="_blank" style="margin-right:50px">
+				<button type="button" class="btn btn-info btn-lg">GitHub</button>
+			</a>
+			<a href="https://edstem.org/us/" target="_blank" style="margin-right:50px">
+				<button type="button" class="btn btn-info btn-lg">Ed Discussion</button>
+			</a>
+			<br><br>
+			<a href="./hardware.html" style="margin-right:50px">
+				<button type="button" class="btn btn-danger btn-lg">Hardware Info</button>
+			</a>
+			<a href="./projects.html" style="margin-right:50px">
+				<button type="button" class="btn btn-danger btn-lg">Previous Course Projects</button>
+			</a>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<h2>Class Time and Lecture Format</h2>
+<!--
+		The first lecture will be broadcasted live on zoom on March 28, 2:30pm (<a href="https://canvas.stanford.edu/" target="_blank">zoom link here</a>). This zoom lecture will also be recorded and then available on <a href="https://canvas.stanford.edu/" target="_blank">canvas</a> as a video. Most of the following lectures will also be on zoom with recorded videos being available later the same day on <a href="https://canvas.stanford.edu/" target="_blank">canvas</a>. If you have questions related to the lecture material, use Ed Discussion or the live zoom office hours of the instructor and the TAs to ask them. Guest lectures towards the end of this quarter will be live-streamed via zoom and then available as video recordings.
+-->
+		<p>
+		Lectures are Mondays and Wednesdays 9:45-11:15 am in McCullough 115.
+		</p>
+	
+		<p>
+		These lectures are not recorded, because there is no AV equipment in the room. However, based on popular request, we will release the video recordings of zoom lectures 2-14 from last year on <a href="https://canvas.stanford.edu/" target="_blank">canvas</a> the same day as the corresponding lecture is taught in person. Note that there may be minor differences between last year's recordings and this year's in-person lectures, so plan on attending in person if you can.
+		</p>
+		
+		<p>
+		If you have questions related to the lecture material, use Ed Discussion or the live zoom office hours of the instructor and the TAs to ask them. Guest lectures towards the end of this quarter will be live-streamed via zoom and then available as video recordings.
+		</p>
+		
+		<br>
+		<h2>Lab</h2>
+		<p>
+			Released as video recording together with a set of written instructions every Friday <a href="file:///Users/gordon/mount/ee267/WWW/syllabus.html" target="_blank">here</a>. Use Ed Discussion or the live zoom TA office hours to ask questions.
+		</p>
+<!--
+		<p>
+			To use the room <b><a href="https://campus-map.stanford.edu/?srch=packard_electrical" target="_blank">Packard 001</a></b>, students have to review and understand <a href="https://stanford.app.box.com/v/Basic-Lab-Safety" target="_blank">this material</a>.
+			After reviewing it, they need to send an email to Steven Clark (steveclark(at)ee(dot)standord(dot)edu) with their SUNet ID number (the one near their name on the ID card) and a note for indicating that they understood the material. Once approved,
+			they will have access to the room. If they would like to have lab64 access for their course projects, they may include that in the note and their access will be granted.
+		</p>
+-->
+
+
+		<br>
+		<h2>Office Hours</h2> Discussion about course material and projects
+		<ul>
+			<li>Mondays, 12:30-1:30 pm, starting on March 28 (Gordon): <a href="https://canvas.stanford.edu/" target="_blank">zoom link on canvas</a><br></li>
+		</ul>
+		Questions about homework, labs and lectures
+		<ul>
+			<!--
+			<li>Mondays, 5-6 pm, starting on April 13 (Hayato): <a href="https://canvas.stanford.edu/" target="_blank">zoom link on canvas</a></li>
+			<li>Wednesdays, 10:30-11:30 am, starting on April 15 (Hayato): <a href="https://canvas.stanford.edu/" target="_blank">zoom link on canvas</a></li>
+			<li>Thursdays, 4-5 pm, starting on April 16 (Nitish): <a href="https://canvas.stanford.edu/" target="_blank">zoom link on canvas</a></li>
+			-->
+			<li>Tuesdays, 2-3 pm, starting on March 29 (Manu): <a href="https://canvas.stanford.edu/" target="_blank">zoom link on canvas</a></li>
+			<li>Thursdays, 10-11 am, starting on March 31 (Suyeon): <a href="https://canvas.stanford.edu/" target="_blank">zoom link on canvas</a></li>
+		</ul>
+
+
+		<br>
+		<h2>Contact</h2>
+		<a href="mailto:ee267-spr2122-staff@lists.stanford.edu">Email (ee267-spr2122-staff@lists.stanford.edu)</a> us <b><font color="red">ONLY</font></b> when your problems cannot be resolved via Ed Discussion.
+
+
+		<br>
+		<h2>Gradescope</h2>
+		All assignments, your midterm, and the final project videos and reports should be submitted on <a href="https://gradescope.com" target="_blank">Gradescope</a>. Use the code 5V8PPE to join the class. If you work as a team, make sure to indicate your team member in the submission
+
+		<br>
+		<h2>Textbooks, Course Notes, and other Reading Materials</h2>
+		<p>
+			Students are required to read additional resources as indicated for each lecture or week. These readings will help get a better intuition and deeper insights into the topics of this course. The readings may also be required to complete tasks for assignments.
+		</p>
+
+		<p>
+			Detailed course notes are available for the topics covered in weeks 5 and 6: orientation tracking with inertial measurement units (IMUs) and pose tracking with the VRduino. You can download these notes here:
+			<ul>
+				<li><a href="https://stanford.edu/class/ee267/notes/ee267_notes_graphicspipeline.pdf" target="_blank">Course Notes on Graphics Pipeline and Transformations (week 1)</a></li>
+				<li><a href="https://stanford.edu/class/ee267/notes/ee267_notes_imu.pdf" target="_blank">Course Notes on Orientation Tracking with IMUs (week 5)</a></li>
+				<li><a href="https://stanford.edu/class/ee267/notes/ee267_notes_tracking.pdf" target="_blank">Course Notes on Pose Tracking with the VRduino (week 6)</a></li>
+			</ul>
+		</p>
+
+		<p>
+			Other topics of in this class are adequately covered by existing textbooks, even though these are optional for the course. The material covered in the lectures should be self-contained, but it's always a good idea to read up on more details. In particular,
+			parts of the following two textbooks will be useful for EE 267:
+			<ul>
+				<li><a href="https://searchworks.stanford.edu/view/8606614" target="_blank">Marschner, Shirley "Fundamentals of Computer Graphics", 4th Edition, CRC Press 2016</a></li>
+				<li><a href="http://vr.cs.uiuc.edu/" target="_blank">LaValle "Virtual Reality", Cambridge University Press, 2016</a></li>
+			</ul>
+		</p>
+
+		<p>
+			Both of these textbooks are freely available online or through the Stanford library, just click on the titles above. We will only be reading a few chapters of these books, so there's no need to purchase them.
+		</p>
+
+		<p>
+			The hands-on parts of this course, i.e. labs and assignments, are based on JavaScript, WebGL, and GLSL. It's really important for students to go through tutorials on their own, such as these
+			<ul id="textbooks">
+				<li><a href="https://www.w3schools.com/js/default.asp" target="_blank">Introductory JavaScript Tutorial</a></li>
+				<li><a href="https://github.com/davidlyons/frontporch" target="_blank">Introduction to WebGL with Three.js</a></li>
+				<li><a href="https://www.khronos.org/files/webgl/webgl-reference-card-1_0.pdf">GLSL ES 1.00 Quick Reference Card</a></li>
+			</ul>
+		</p>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<h2>Prerequisites</h2>
+			<ul>
+				<li>
+					<span class="spanh">Coding Experience</span> (especially JavaScript, C/C++)<br> All lab assignments will be in either JavaScript (WebGL) or C++ (Arduino). Even though we don't assume prior experience in JavaScript and GLSL, you should
+					be able to understand object-oriented programs and modify them.
+				</li>
+				<li>
+					<span class="spanh">Linear Algebra</span> (e.g. MATH 51)<br> We will use matrix transpose, inverse, and other operations to do algebra with matrix expressions. We’ll use transformation matrices to rotate/transform points. These topics are important for the homeworks. If you are a quick learner, you should be able to learn them during the class if you haven’t yet.
+				</li>
+				<li>
+					<span class="spanh">Basics of Computer Graphics and/or Computer Vision</span> (helpful but <b><font color="red">NOT</font></b> required)<br>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<h2>Assignment Details</h2>
+		There will be <a href="./syllabus.html">weekly assignments</a> in this class. These assignments will contain some theoretical questions and also implementations of techniques that we will discuss in class. Please refer to assignment writeups for details. After you finish, submit your code and report on Gradescope.
+
+		<br>
+		<h2>Grading Policy</h2>
+
+		<!--
+		The course requirements include: (1) 6 assignments, (2) an in-class midterm, and (3) a major final project with a 1-2 page report (3 unit version) or a 6-8 page conference paper style report (4 unit version) as well as a 1 page project proposal (3 and 4 unit versions). The 5-unit WIM option additionally requires weekly writing assignments and participation in 2 workshops.
+		<ul>
+			<li>Assignment: 60%</li>
+			<li>Midterm: 10%</li>
+			<li>Final Project: 30%</li>
+		</ul>
+		-->
+
+		The course requirements include: (1) 6 assignments, (2) an in-class midterm, and (3) a final project with a 1-2 page report (3 unit version) or a 6-8 page conference paper style report (4 unit version) as well as a 1 page project proposal (3 and 4 unit versions). The 5-unit WIM option additionally requires weekly writing assignments and participation in 2 workshops.
+		<ul>
+			<li>Assignment: 60%</li>
+			<li>Midterm: 20%</li>
+			<li>Final Project: 20%</li>
+		</ul>
+
+		<h2>Enrollment</h2>
+		<!--
+		This is an experimental class. Enrollment is limited to 80 students working in teams of 2. All hardware will be provided in the lab but must be returned at the end of the course. Unfortunately, our hardware resources and the lab space are currently
+		limited. If you did not get a chance to enroll, come to the first few classes anyway and sign up for the waiting list. Last time, everyone on the waiting list got in so don't panic!
+		!-->
+
+		This is an experimental class. Enrollment is limited to 50 students. The enrollment cap is due to the limited number of hardware kits we have available and although we used to allow teams of 2 students to share one in the past, the current COVID-19 situation requires us to send one hardware kit to each student (hence the lower enrollment cap). If you did not get a chance to enroll, watch the first few classes anyway and sign up for the waiting list. In the past, students dropped the course and everyone on the waiting list was able to get in, so so don't panic!
+
+
+		<br>
+		<h2>Course Projects, Project Proposal, and Final Report</h2>
+
+		<p>
+		You can work in teams of up to 3 students for the project, although most students will probably work by themselves. Submit only one proposal and final report for each team to gradescope. The expected amount of work is relative to the number of team members, so if two teams work on a similar project, we'd expect less work from a smaller team. Before you start to work on the proposal or the report, take a look at some of the past project proposals and reports to give you sense for what's expected.
+		</p>
+
+		<p>
+		The project proposal is a 1-2 page document that should contain the following elements: clear motivation of your idea, a discussion of related work along at least 3 scientific references (i.e., scientific papers not blog articles or websites), an overview of what exactly your project is about and what the final goals are, milestones for your team with a timeline and intermediate goals. Once you send us your proposal, we may ask you to revise it and we will assign a project mentor to your team.
+		</p>
+
+		<p>
+		The format of the final project report depends on the number of units you take. If you are enrolled in the 3-unit version, please submit a 2-page project report that proves a concise summary of your project and maybe add 1-2 screenshots. If you are taking the 4-unit or 5-unit (WIM) version, your report should look like a short (~6 pages) conference paper. We expect the following sections for this format, which are standard practice for conference papers: abstract, introduction, related work, theory (i.e., your approach), analysis and evaluation, results, discussion and conclusion, references. To make your life easier, we provide an MS Word and a LaTex template that you can use to get started on your report (see syllabus).
+		</p>
+
+		<br>
+		<h2>Writing in the Major (WIM)</h2>
+		The 5-unit WIM version of this course (EE267W) is an option for EE undergraduates who need to satisfy their WIM requirement. If you would like to sign up for this, you have to also be enrolled in the 4-unit version of EE267 and contact the course instructors during the first week of classes. In addition to all the requirements of the 4-unit version, the WIM option has weekly writing and reading assignments. You can find an outline of these additional assignments <a href="syllabus_wim.html" target="_blank">here</a>.
+
+		<br>
+		<h2>Class Format</h2>
+		Each week, there are 2 lectures and 1 lab. The lab is required to be completed before starting to work on the weekly assignment. We will release the lab writeup every Friday.<!-- but the TAs will also be available for an in-person lab to help if you need it.-->
+
+		<br>
+		<h2>Getting Help</h2>
+		If you have a question, to get a response from the teaching staff quickly we strongly encourage you to post it to the class Ed Discussion. For private matters, please make a
+		private note visible only to the course instructors. For longer discussions with TAs and to get help in person, we strongly encourage you to come to office hours. You can also reach out to us via email using the course staff mailing list.
+
+		<br>
+		<h2>Collaboration Policy</h2>
+		Students are supposed to work on the theoretical part of assignments independently. However, students are allowed to form teams of up to 2 people to work on the programming part of assignments. Even when students work as a team, each student must understand the solution well enough in order to reconstruct it by him/herself.
+
+		<br>
+		<h2>Late policy</h2>
+		<p>Since starter code of new assignments typically include answers of previous assignments, there are <b><font color="red">NO</font></b> late days for assignments.</p>
+
+		<br>
+		<h2>Related Courses</h2>
+		<p>
+			This course requires programming experience (especially JavaScript, C or C++) as well as basic knowledge of linear algebra. We will review most of the required mathematical concepts, but we assume that you have strong programming skills. Homework require
+			JavaScript and GLSL programming. Even though we don't assume prior experience in JavaScript and GLSL, you should be able to understand object-oriented programs and modify them. Previous knowledge of computer graphics or computer vision would
+			be helpful but is not absolutely required.
+		</p>
+		<p>
+			Courses that may be very helpful, but are not prerequisites:
+			<ul>
+				<li><span class="spanh"><a href="http://web.stanford.edu/class/cs148/" target="_blank">CS148:</a> Introduction to Computer Graphics and Imaging</span><br></li>
+			</ul>
+		</p>
+		<p>
+			Related courses at Stanford that you may also find interesting:
+			<ul>
+				<li><span class="spanh"><a href="http://web.stanford.edu/class/cs248/" target="_blank">CS248:</a> Interactive Computer Graphics</span><br></li>
+				<li><span class="spanh"><a href="http://web.stanford.edu/class/ee367/" target="_blank">EE367:</a> Computational Imaging and Display</span><br></li>
+			</ul>
+			A few of the course topics overlap with different parts of related courses.
+		</p>
+
+		<br>
+		<h2>Acknowledgements</h2>
+		<p>
+			This course is generously supported by AMD and Oculus VR. Thanks for making this happen!
+		</p>
+		<p>
+			<a href="http://stanford.edu/~rkkonrad" target="_blank">Robert Konrad</a> and
+			<a href="https://nitish.me/" target="_blank">Nitish Padmanaban</a> have contributed significantly to developing this course - thanks Robert and Nitish!
+		</p>
+		<p>
+			This webpage is designed by Chi Zhang based on the website for <a href="http://cs231n.stanford.edu/" target="_blank">CS231N</a>. We thank <a href="http://cs.stanford.edu/people/karpathy/" target="_blank">Andrej Karparthy</a>, who designed the CS231N website and kindly shared the code with us. The course banner is re-designed based on <a href="http://blog.udacity.com/wp-content/uploads/2016/09/VRDeveloperNanodegreeProgram.png" target="_blank">this image</a> used in a Udacity's post.
+		</p>
+	</div>
+
+	<div class="">
+		<div class="container sec"> </div>
+	</div>
+
+	<!-- jQuery and Boostrap -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
